@@ -1,0 +1,123 @@
+ <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>WebDashboard</title>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <style>
+            #heads{
+                padding-top: 30px;
+                padding-right: 20px;
+                padding-bottom: 30px;
+                padding-left: 20px;
+                background: teal;
+                text-align: center;
+                color: white;
+            }
+            img{
+              float:left;
+            }
+           
+            h1{
+              color: teal;
+            }
+            #right{
+                float:right;
+            }
+        </style>
+    </head>
+    <body>  
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" id="heads" href="#">Latitude</a>
+                    <button class="navbar-toggler"  type="button" data-toggle="dropdown" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class=" navbar-collapse" id="navbarNavDropdown">
+                      <ul class="navbar-nav">
+                        <li class="nav-item dropdown show"> 
+                            <a class="nav-link dropdown-toggle" href="#" id="Fig1.png" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Plots</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                  <a class="dropdown-item" href="MaxTemp.html">Max Temperature</a>
+                                  <a class="dropdown-item" href="Humidity.html">Humidity</a>
+                                  <a class="dropdown-item" href="Cloudiness.html">Cloudiness</a>
+                                  <a class="dropdown-item" href="WindSpeed.html">Wind Speed</a>
+                              </div>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="Comparisons.html">Comparison </a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="Data.html">Data</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                              
+                      </ul>
+                    </div>
+                  </div>
+                  </nav>
+                  <div class="container">
+                    <!-- Row 1 -->
+                     <div class="row">
+                        <div class="col-md-12">
+                           <h1>Comparisons: Latitude vs. X</h1>
+                           <p>Click any plot to get indepth comparison</p>
+                           <hr>
+                        </div>
+                    </div>
+                 </div>
+                 
+                 <div class="row">
+                  <div class="col-md-6" id ="right">
+                      <div class="card" style="width: 23rem;">
+                          <img class="card-img-top" src="WebVisualizations/Resources/assets/images/temperaturemap.png" alt="Card image cap">
+                          <div class="card-body">
+                            <!-- <h5 class="card-title">Max Temperature</h5>
+                            <p class="card-text">click to see latitude vs temp.</p> -->
+                            <a href="MaxTemp.html" class="btn btn-primary"> click to see latitude vs temp</a>
+                          </div>
+                        </div>
+                   </div>
+                    <div class="col-md-6">
+                      
+                    <div class="card" style="width: 23rem;">
+                      <img class="card-img-top" src="WebVisualizations/Resources/assets/images/humiditymap.png" alt="Card image cap">
+                        <div class="card-body">
+                              <!-- <h5 class="card-title">Max Temperature</h5>
+                              <p class="card-text">click to see latitude vs temp.</p> -->
+                          <a href="Humidity.html" class="btn btn-primary"> click to see latitude vs Humidity</a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                  <div class="row">
+                  <div class="col-md-6">
+                    <div class="card" style="width: 23rem;">
+                        <img class="card-img-top" src="WebVisualizations/Resources/assets/images/cloudymap.png" alt="Card image cap">
+                        <div class="card-body">
+                          <!-- <h5 class="card-title">Max Temperature</h5>
+                          <p class="card-text">click to see latitude vs temp.</p> -->
+                          <a href="Cloudiness.html" class="btn btn-primary"> click to see latitude vs cloudiness</a>
+                        </div>
+                    </div>
+                  </div>
+                    <div class="col-md-6" id="right">
+                      <div class="card" style="width: 23rem;">
+                          <img class="card-img-top" src="WebVisualizations/Resources/assets/images/windmap.png" alt="Card image cap">
+                          <div class="card-body">
+                            <!-- <h5 class="card-title">Max Temperature</h5>
+                            <p class="card-text">click to see latitude vs temp.</p> -->
+                            <a href="WindSpeed.html" class="btn btn-primary"> click to see latitude vs wind speed</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                
+                  
+             </body>
+</html>
